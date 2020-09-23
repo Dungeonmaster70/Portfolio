@@ -1,4 +1,23 @@
 @charset "UTF-8";
+::-webkit-scrollbar{
+  width:30px;
+}
+::-webkit-scrollbar-button
+     { 
+      background-color: transparent;
+      color: red;
+      }
+::-webkit-scrollbar-track
+  { 
+    background-color: #402a4e;
+   }
+::-webkit-scrollbar-thumb 
+  { 
+    background:linear-gradient(to bottom ,#402a4e , #db7153);  
+    height: 10px;
+    padding: 3px;
+    border-radius:  300px 400px;
+   }
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -55,7 +74,14 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  
+  }
+.body-bg{
+  background: red 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -6105,16 +6131,6 @@ button.bg-secondary:focus {
   background-color: #545b62 !important;
 }
 
-.bg-success {
-  background-color: #28a745 !important;
-}
-
-a.bg-success:hover, a.bg-success:focus,
-button.bg-success:hover,
-button.bg-success:focus {
-  background-color: #1e7e34 !important;
-}
-
 .bg-info {
   background-color: #17a2b8 !important;
 }
@@ -6156,13 +6172,13 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: #343a40 !important;
+  background: url(https://media.giphy.com/media/BHNfhgU63qrks/giphy.gif);
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
 button.bg-dark:focus {
-  background-color: #1d2124 !important;
+  background: url(https://media.giphy.com/media/lT5CqWF77OCY4xKirk/giphy.gif) !important;
 }
 
 .bg-white {
