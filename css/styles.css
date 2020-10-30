@@ -82,7 +82,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+};
 
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
